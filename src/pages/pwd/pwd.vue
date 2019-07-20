@@ -43,7 +43,16 @@
                     title: '已发送重置邮件至注册邮箱，请注意查收。',
                     duration: 3000
                 });
-            }
+            },
+			goPage(e) {
+				let url = e.url ? e.url: e;
+				console.log(e)
+				console.log(url)
+				uni.navigateTo({
+					url: url
+				})
+				return false
+			},
         }
     }
 </script>

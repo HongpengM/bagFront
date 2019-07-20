@@ -23,11 +23,17 @@
 <script>
     import service from '../../service.js';
     import mInput from '../../components/m-input.vue';
-
+	import {uniList} from '@dcloudio/uni-ui'
+	import {uniListItem} from '@dcloudio/uni-ui'
+	
+	
+		
     export default {
         components: {
-            mInput
-        },
+            mInput,
+			uniList,
+			uniListItem
+		},
         data() {
             return {
                 account: '',

@@ -10,7 +10,10 @@ const store = new Vuex.Store({
          */
         forcedLogin: false,
         hasLogin: false,
-        userName: ""
+        userName: "",
+		activationCode: '',
+		activationState: false,
+		trackBag: false
     },
     mutations: {
         login(state, userName) {
@@ -20,7 +23,14 @@ const store = new Vuex.Store({
         logout(state) {
             state.userName = "";
             state.hasLogin = false;
-        }
+        },
+		activate(state, activationCode){
+			state.activationCode = activationCode || false;
+			state.activationState = false
+		},
+		setTracking(state, trackBag){
+			state.trackBag = trackBag
+		}
     }
 })
 

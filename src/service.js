@@ -20,6 +20,7 @@ const addUser = function (userInfo) {
     uni.setStorageSync(USERS_KEY, JSON.stringify(users));
 }
 
+
 export default {
     getUsers,
     addUser
