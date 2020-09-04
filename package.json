@@ -31,7 +31,7 @@
     "@dcloudio/uni-mp-weixin": "*",
     "@dcloudio/uni-ui": "^1.0.0",
     "flyio": "^0.6.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "regenerator-runtime": "^0.12.1",
     "vue": "^2.6.10",
     "vuex": "^3.0.1"
